@@ -32,10 +32,15 @@
 
     <!-- ══════════════════════════════════ HERO ══════════════════════════════════ -->
     <section id="hero" class="hero">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
       <div class="container hero__inner">
+
         <div class="hero__text fade-up">
-          <span class="hero__eyebrow">Based in Coventry, UK</span>
-          <h1 class="hero__name">Manoj Narayan Ramesh</h1>
+          <div class="hero__eyebrow-wrap">
+            <span class="hero__status-dot"></span>
+            <span class="hero__eyebrow">Available for new opportunities · Coventry, UK</span>
+          </div>
+          <h1 class="hero__name">Manoj<br>Narayan<br><em>Ramesh</em></h1>
           <p class="hero__title">Dynamics 365 Lead Functional Consultant</p>
           <p class="hero__tagline">
             8+ years delivering enterprise Field Service and ERP transformations
@@ -43,19 +48,57 @@
             operational efficiency through smart, scalable cloud solutions.
           </p>
           <div class="hero__cta">
-            <a href="#projects" class="btn btn--primary">View My Work</a>
-            <a href="#contact"  class="btn btn--ghost">Get in Touch</a>
+            <a href="#projects" class="btn btn--primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              View My Work
+            </a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-value">8+</span>
+              <span class="hero__stat-label">Years Experience</span>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-value">3</span>
+              <span class="hero__stat-label">Continents</span>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-value">98%</span>
+              <span class="hero__stat-label">Client Satisfaction</span>
+            </div>
           </div>
         </div>
-        <div class="hero__avatar-wrap fade-up fade-up--delay">
-          <div class="hero__avatar" aria-label="Headshot placeholder">
-            <svg class="avatar__icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle cx="40" cy="30" r="16" fill="currentColor" opacity="0.3"/>
-              <path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.3"/>
-            </svg>
-            <span class="avatar__label">Your Photo Here</span>
+
+        <div class="hero__photo-wrap fade-up fade-up--delay">
+          <div class="hero__photo-deco" aria-hidden="true"></div>
+          <div class="hero__photo-frame">
+            <img
+              src="assets/headshot.jpg"
+              alt="Manoj Narayan Ramesh"
+              class="hero__photo"
+              onerror="this.parentElement.classList.add('hero__photo-frame--fallback'); this.style.display='none';"
+            />
+            <div class="hero__photo-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="30" r="16" fill="currentColor" opacity="0.25"/>
+                <path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.25"/>
+              </svg>
+              <span>Your Photo Here</span>
+            </div>
+          </div>
+          <div class="hero__badge hero__badge--cert">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            MB-240 Certified
+          </div>
+          <div class="hero__badge hero__badge--award">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            Diamond Award
           </div>
         </div>
+
       </div>
       <div class="hero__scroll-hint" aria-hidden="true">
         <span>Scroll</span>
