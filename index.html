@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+<!--
+  ╔═══════════════════════════════════════════════════════════════════════════╗
+  ║  HOW TO CUSTOMISE THIS SITE                                              ║
+  ║                                                                          ║
+  ║  Edit directly on GitHub:                                                ║
+  ║  1. Go to your repo → click index.html → pencil icon (Edit)             ║
+  ║  2. Search for "EDIT:" comments to find editable sections               ║
+  ║  3. Change the text between the comments                                 ║
+  ║  4. Commit → site updates in ~1 min                                      ║
+  ║                                                                          ║
+  ║  To add a new project: copy an existing <article class="card"> block,   ║
+  ║  paste it after the last one, and update the number, tags, title,        ║
+  ║  description, and meta.                                                  ║
+  ║                                                                          ║
+  ║  To add a new CV entry: copy an existing <div class="cv__entry"> block, ║
+  ║  paste it in the right chronological position, and update the fields.    ║
+  ║                                                                          ║
+  ║  Logo URL format: https://logo.clearbit.com/companywebsite.com          ║
+  ╚═══════════════════════════════════════════════════════════════════════════╝
+-->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,8 +77,10 @@
         <div class="hero__text fade-up">
           <div class="hero__eyebrow-wrap">
             <span class="hero__status-dot"></span>
+            <!-- EDIT: Change your availability status and location -->
             <span class="hero__eyebrow">Open to opportunities · London, United Kingdom</span>
           </div>
+          <!-- EDIT: Your name (last line gets the accent colour) -->
           <h1 class="hero__name">
             <span class="hero__name-line">Manoj</span>
             <span class="hero__name-line">Narayan</span>
@@ -78,6 +100,7 @@
               Hitachi Diamond Award
             </span>
           </div>
+          <!-- EDIT: Your tagline / elevator pitch -->
           <p class="hero__tagline">
             A results-driven Microsoft Dynamics 365 specialist with 8+ years of experience
             leading enterprise Field Service and ERP transformations across Europe, North America,
@@ -127,9 +150,8 @@
         </div>
       </div>
 
-      <div class="hero__scroll-hint" aria-hidden="true">
-        <span>Scroll</span>
-        <div class="hero__scroll-line"></div>
+      <div class="hero__scroll-hint" id="scroll-hint" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
       </div>
     </section>
 
@@ -141,6 +163,7 @@
           <h2 class="section-title">Background &amp; Expertise</h2>
         </div>
         <div class="about__grid">
+          <!-- EDIT: About bio paragraphs -->
           <div class="about__bio fade-up">
             <p>
               I'm a Microsoft Dynamics 365 Lead Consultant / Solution Architect with <strong>8+ years of experience</strong>
@@ -177,6 +200,14 @@
                 <div class="skills-list__header">
                   <span class="skills-list__dot"></span>
                   <span>D365 Field Service</span>
+                  <span class="skills-list__level">Expert</span>
+                </div>
+                <div class="skills-list__bar"><div class="skills-list__fill"></div></div>
+              </li>
+              <li class="skills-list__item" data-skill="93">
+                <div class="skills-list__header">
+                  <span class="skills-list__dot"></span>
+                  <span>D365 Core Modules</span>
                   <span class="skills-list__level">Expert</span>
                 </div>
                 <div class="skills-list__bar"><div class="skills-list__fill"></div></div>
@@ -229,14 +260,6 @@
                 </div>
                 <div class="skills-list__bar"><div class="skills-list__fill"></div></div>
               </li>
-              <li class="skills-list__item" data-skill="93">
-                <div class="skills-list__header">
-                  <span class="skills-list__dot"></span>
-                  <span>D365 Core Modules</span>
-                  <span class="skills-list__level">Expert</span>
-                </div>
-                <div class="skills-list__bar"><div class="skills-list__fill"></div></div>
-              </li>
             </ul>
             <h3 class="about__skills-title" style="margin-top:1.75rem">Certifications</h3>
             <div class="cert-chips">
@@ -257,6 +280,7 @@
           <h2 class="section-title">Selected Projects</h2>
           <p class="section-desc">A selection of enterprise engagements delivered across global markets.</p>
         </div>
+        <!-- EDIT: Project cards — copy a full <article> block to add a new one -->
         <div class="projects__grid">
 
           <article class="card tilt-card fade-up">
@@ -371,6 +395,7 @@
           <span class="section-label">CV / Resume</span>
           <h2 class="section-title">Career Summary</h2>
         </div>
+        <!-- EDIT: Career timeline — copy a full cv__entry block to add a new role -->
         <div class="cv__inner cv__inner--full fade-up">
           <div class="cv__timeline">
 
@@ -503,6 +528,7 @@
     <div class="container footer__inner">
       <p class="footer__copy">&copy; <span id="footer-year"></span> Manoj Narayan Ramesh</p>
       <nav class="footer__links" aria-label="Social links">
+        <!-- EDIT: Your LinkedIn URL -->
         <a href="https://www.linkedin.com/in/realmanoj" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>

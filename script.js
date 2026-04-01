@@ -12,11 +12,13 @@ themeBtn.addEventListener('click', () => {
   localStorage.setItem('theme', next);
 });
 
-/* ── SCROLL PROGRESS ─────────────────────────────────────────────────────── */
+/* ── SCROLL PROGRESS + SCROLL HINT FADE ──────────────────────────────────── */
 const progressBar = document.getElementById('scroll-progress');
+const scrollHint  = document.getElementById('scroll-hint');
 window.addEventListener('scroll', () => {
   const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
   progressBar.style.width = pct + '%';
+  if (scrollHint) scrollHint.style.opacity = Math.max(0, 1 - window.scrollY / 200);
 }, { passive: true });
 
 /* ── NAV — scroll shadow + active link ──────────────────────────────────── */
